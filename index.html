@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JANANI - Internet Rumah & Voucher WiFi</title>
+
+<title>JANANI | Internet Rumah & Voucher WiFi Solok</title>
+
+<meta name="description" content="JANANI menyediakan layanan internet rumah dan voucher WiFi di Talang Babungo, Alahan Panjang dan Tigo Lurah dengan dukungan jaringan PT. Lintas Jaringan Nusantara.">
 
 <style>
 *{
@@ -14,40 +17,65 @@ font-family:Arial, sans-serif;
 }
 
 body{
-background:#f5f7f5;
+background:#f7f7f7;
 color:#333;
 line-height:1.6;
 }
 
 header{
-background:#1f8f4d;
+background:white;
+padding:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+text-align:center;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+max-width:250px;
+width:100%;
+}
+
+.hero{
+background:linear-gradient(135deg,#d62828,#222);
 color:white;
 padding:60px 20px;
 text-align:center;
 }
 
-header h1{
-font-size:42px;
-margin-bottom:10px;
+.hero h1{
+font-size:34px;
+margin-bottom:15px;
 }
 
-header p{
+.hero p{
+max-width:700px;
+margin:auto;
 font-size:18px;
-margin-bottom:20px;
 }
 
 .btn{
 display:inline-block;
-background:white;
-color:#1f8f4d;
-padding:12px 24px;
+padding:12px 25px;
+margin:10px;
 border-radius:6px;
 text-decoration:none;
 font-weight:bold;
 }
 
+.btn-wa{
+background:#25D366;
+color:white;
+}
+
+.btn-paket{
+background:white;
+color:#d62828;
+}
+
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:40px 20px;
 }
@@ -57,39 +85,95 @@ background:white;
 padding:25px;
 margin-bottom:25px;
 border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.08);
+box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
 h2{
-color:#1f8f4d;
+color:#d62828;
 margin-bottom:15px;
 }
 
-ul,ol{
-padding-left:20px;
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+table th,
+table td{
+border:1px solid #ddd;
+padding:10px;
+text-align:left;
+}
+
+table th{
+background:#d62828;
+color:white;
+}
+
+.area-list li{
+margin-bottom:8px;
+}
+
+.steps li{
+margin-bottom:10px;
 }
 
 footer{
-background:#1f8f4d;
+background:#222;
 color:white;
+padding:30px 20px;
 text-align:center;
-padding:20px;
-margin-top:30px;
+}
+
+.footer-link{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+.map-btn{
+display:inline-block;
+background:#d62828;
+color:white;
+padding:12px 20px;
+border-radius:6px;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:28px;
+}
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
-<h1>JANANI</h1>
-<p>Layanan Internet Rumah, UMKM dan Voucher WiFi</p>
+<img src="logo-janani.jpg" alt="JANANI" class="logo">
+</header>
 
-<a class="btn" href="https://wa.me/6285220400977">
-Hubungi via WhatsApp
+<section class="hero">
+
+<h1>Internet Rumah Cepat & Stabil</h1>
+
+<p>
+Melayani Talang Babungo, Alahan Panjang dan Tigo Lurah dengan dukungan jaringan PT. Lintas Jaringan Nusantara.
+</p>
+
+<br>
+
+<a class="btn btn-wa" href="https://wa.me/6285220400977">
+Hubungi WhatsApp
 </a>
 
-</header>
+<a class="btn btn-paket" href="#paket">
+Lihat Paket
+</a>
+
+</section>
 
 <div class="container">
 
@@ -97,31 +181,114 @@ Hubungi via WhatsApp
 <h2>Tentang Kami</h2>
 
 <p>
-JANANI merupakan penyedia layanan internet yang bergerak sebagai reseller
-layanan internet dengan dukungan jaringan dari PT. Lintas Jaringan Nusantara.
-Kami melayani pemasangan internet rumah, internet usaha (UMKM), serta
-penjualan voucher WiFi hotspot.
+JANANI merupakan penyedia layanan internet rumah dan voucher WiFi yang melayani wilayah Talang Babungo, Alahan Panjang, dan Tigo Lurah.
+</p>
+
+<br>
+
+<p>
+Layanan internet yang kami pasarkan didukung oleh infrastruktur jaringan dari PT. Lintas Jaringan Nusantara untuk memberikan konektivitas yang stabil dan terpercaya kepada pelanggan.
+</p>
+
+</div>
+
+<div class="card" id="paket">
+
+<h2>Paket Internet Rumah</h2>
+
+<table>
+
+<tr>
+<th>Paket</th>
+<th>Kecepatan</th>
+<th>Harga</th>
+</tr>
+
+<tr>
+<td>Basic</td>
+<td>Up To 7 Mbps</td>
+<td>Rp160.000 / bulan</td>
+</tr>
+
+<tr>
+<td>Family</td>
+<td>Up To 15 Mbps</td>
+<td>Rp225.000 / bulan</td>
+</tr>
+
+<tr>
+<td>Plus</td>
+<td>Up To 30 Mbps</td>
+<td>Rp290.000 / bulan</td>
+</tr>
+
+<tr>
+<td>Premium</td>
+<td>Up To 50 Mbps</td>
+<td>Rp365.000 / bulan</td>
+</tr>
+
+</table>
+
+<br>
+
+<p>
+Harga sudah termasuk pajak.
+</p>
+
+<p>
+Biaya instalasi Rp400.000 (sekali bayar).
 </p>
 
 </div>
 
 <div class="card">
-<h2>Layanan Kami</h2>
 
-<ul>
-<li>Pemasangan Internet Rumah</li>
-<li>Paket Internet Bulanan</li>
-<li>Internet untuk UMKM</li>
-<li>Voucher WiFi Hotspot</li>
-<li>Bantuan Teknis Pelanggan</li>
+<h2>Voucher WiFi</h2>
+
+<table>
+
+<tr>
+<th>Durasi</th>
+<th>Harga</th>
+</tr>
+
+<tr>
+<td>3 Jam</td>
+<td>Rp2.000</td>
+</tr>
+
+<tr>
+<td>6 Jam</td>
+<td>Rp5.000</td>
+</tr>
+
+<tr>
+<td>16 Jam</td>
+<td>Rp10.000</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Area Layanan</h2>
+
+<ul class="area-list">
+<li>Talang Babungo</li>
+<li>Alahan Panjang</li>
+<li>Tigo Lurah</li>
 </ul>
 
 </div>
 
 <div class="card">
-<h2>Cara Pemesanan</h2>
 
-<ol>
+<h2>Cara Berlangganan</h2>
+
+<ol class="steps">
 <li>Hubungi Admin JANANI</li>
 <li>Pengecekan Ketersediaan Jaringan</li>
 <li>Penjadwalan Instalasi</li>
@@ -132,18 +299,46 @@ penjualan voucher WiFi hotspot.
 </div>
 
 <div class="card">
+
 <h2>Kontak</h2>
 
 <p><b>WhatsApp:</b> 085220400977</p>
 <p><b>Email:</b> dynk.sf@gmail.com</p>
-<p><b>Alamat:</b> Talang Babungo, Kecamatan Hiliran Gumanti, Kabupaten Solok, Sumatera Barat</p>
+<p><b>Alamat:</b> Talang Babungo, Kecamatan Hiliran Gumanti, Kabupaten Solok</p>
+<p><b>Jam Operasional:</b> Jumat - Rabu | 08.00 - 17.00 WIB</p>
+
+</div>
+
+<div class="card">
+
+<h2>Lokasi</h2>
+
+<a class="map-btn"
+href="https://maps.app.goo.gl/zQUDpR7xswGgB7ceA"
+target="_blank">
+Lihat Lokasi di Google Maps
+</a>
 
 </div>
 
 </div>
 
 <footer>
-© 2026 JANANI - Layanan Internet Rumah & Voucher WiFi
+
+<p>© 2026 JANANI</p>
+
+<br>
+
+<a class="footer-link" href="privacy-policy.html">
+Privacy Policy
+</a>
+
+|
+
+<a class="footer-link" href="terms.html">
+Terms & Conditions
+</a>
+
 </footer>
 
 </body>
