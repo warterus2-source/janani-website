@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daftar Pelanggan Baru - JANANI</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+margin:0;
+padding:0;
+}
+
+.container{
+max-width:700px;
+margin:30px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+h1{
+color:#d62828;
+text-align:center;
+}
+
+label{
+display:block;
+margin-top:15px;
+font-weight:bold;
+}
+
+input, select, textarea{
+width:100%;
+padding:12px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:6px;
+box-sizing:border-box;
+}
+
+button{
+margin-top:20px;
+width:100%;
+padding:14px;
+background:#25D366;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.9;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Daftar Pelanggan Baru</h1>
+
+<label>Nama Lengkap</label>
+<input type="text" id="nama">
+
+<label>Nomor WhatsApp</label>
+<input type="text" id="hp">
+
+<label>Alamat Pemasangan</label>
+<textarea id="alamat"></textarea>
+
+<label>Pilih Paket</label>
+<select id="paket">
+<option>Up To 7 Mbps - Rp160.000</option>
+<option>Up To 15 Mbps - Rp225.000</option>
+<option>Up To 30 Mbps - Rp290.000</option>
+<option>Up To 50 Mbps - Rp365.000</option>
+</select>
+
+<button onclick="kirimWA()">
+Kirim Pendaftaran
+</button>
+
+</div>
+
+<script>
+
+function kirimWA(){
+
+let nama = document.getElementById("nama").value;
+let hp = document.getElementById("hp").value;
+let alamat = document.getElementById("alamat").value;
+let paket = document.getElementById("paket").value;
+
+let pesan =
+"Halo Admin JANANI,%0A%0A" +
+"Saya ingin mendaftar layanan internet.%0A%0A" +
+"Nama : " + nama + "%0A" +
+"No HP : " + hp + "%0A" +
+"Alamat : " + alamat + "%0A" +
+"Paket : " + paket;
+
+window.open(
+"https://wa.me/6285220400977?text=" + pesan,
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
