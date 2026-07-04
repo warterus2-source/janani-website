@@ -74,6 +74,14 @@ opacity:0.9;
 <label>Nomor WhatsApp</label>
 <input type="text" id="hp">
 
+<label>Area Layanan</label>
+
+<select id="area">
+<option>Talang Babungo</option>
+<option>Alahan Panjang</option>
+<option>Tigo Lurah</option>
+</select>
+  
 <label>Alamat Pemasangan</label>
 <textarea id="alamat"></textarea>
 
@@ -85,10 +93,23 @@ opacity:0.9;
 <option>Up To 50 Mbps - Rp365.000</option>
 </select>
 
+<p>
+Biaya instalasi awal Rp400.000 (sekali bayar).
+</p>
+
+<p style="font-size:14px;color:#666;">
+Layanan internet JANANI didukung oleh infrastruktur jaringan
+PT. Lintas Jaringan Nusantara.
+</p>
+
 <button onclick="kirimWA()">
 Kirim Pendaftaran
 </button>
 
+<a href="index.html">
+← Kembali ke Beranda
+</a>
+  
 </div>
 
 <script>
@@ -97,6 +118,7 @@ function kirimWA(){
 
 let nama = document.getElementById("nama").value;
 let hp = document.getElementById("hp").value;
+let area = document.getElementById("area").value;
 let alamat = document.getElementById("alamat").value;
 let paket = document.getElementById("paket").value;
 
@@ -105,6 +127,7 @@ let pesan =
 "Saya ingin mendaftar layanan internet.%0A%0A" +
 "Nama : " + nama + "%0A" +
 "No HP : " + hp + "%0A" +
+"Area : " + area + "%0A" +
 "Alamat : " + alamat + "%0A" +
 "Paket : " + paket;
 
